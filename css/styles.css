@@ -110,6 +110,17 @@ img.project{
   height: auto;
 }
 
+.imagem {
+  background-image: url("/assets/img/background1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  background-attachment: fixed;
+  background-position: auto; 
+  
+}
+
+
 
 
 body {
@@ -4042,6 +4053,7 @@ input[type=button].btn-block {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  padding-top: 2rem;
 }
 .navbar-nav .nav-link {
   padding-right: 0;
@@ -6130,10 +6142,10 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #151c48 !important;
+  background-color: #313364 !important;
 }
 .text-primary {
-  color: #174580 !important;
+  color: #313364 !important;
   
 }
 
@@ -6331,7 +6343,7 @@ button.bg-dark:focus {
 
 .rounded-circle {
   border-radius: 20% !important;
-  border-color: #0b346a !important;
+  border-color: #282b2d !important;
 }
 
 .rounded-pill {
