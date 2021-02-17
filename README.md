@@ -1,6 +1,6 @@
 # # Portfólio 
 
-<img src="https://github.com/georgepiter/portfolio/blob/main/assets/img/port.jpg?raw=true" alt="port Page"/>
+<img src="https://github.com/georgepiter/portfolio/blob/main/assets/img/profile.jpg?raw=true" alt="port Page"/>
 
 
 ## 💻 O projeto foi desenvolvido em:
