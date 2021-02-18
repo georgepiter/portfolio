@@ -1,5 +1,7 @@
 # # Portfólio 
 
+ Publicado em:   https://developergeorgepiter.netlify.app/
+
 <img src="https://github.com/georgepiter/portfolio/blob/main/assets/img/profile.jpg?raw=true" alt="port Page"/>
 
 
