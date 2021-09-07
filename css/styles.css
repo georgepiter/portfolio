@@ -112,16 +112,14 @@ img.project{
 
 .imagem {
   background-image: url("/assets/img/background1.jpg");
+  background-size: 84%;
+  background-position: top,right,100%;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
-  background-attachment: fixed;
-  background-position: auto; 
+  background-attachment: scroll;
+  background-origin: unset;
+  background-blend-mode: darken; 
   
 }
-
-
-
 
 body {
   margin: 0;
