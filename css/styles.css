@@ -128,15 +128,15 @@ img.project {
 }
 
 .imagem {
-  background-image: url("/assets/img/background1.jpg");
-  background-size: 84%;
-  background-position: top, right, 100%;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+  background-repeat: space;
   background-attachment: scroll;
   background-origin: unset;
   background-blend-mode: darken;
-
+  height: 50vh; /* Define a altura da imagem em relação à altura da janela do navegador */
 }
+
 
 body {
   margin: 0;
