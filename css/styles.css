@@ -134,13 +134,12 @@ img.project {
   background-attachment: scroll;
   background-origin: unset;
   background-blend-mode: darken;
-  height: 50vh; /* Define a altura da imagem em relação à altura da janela do navegador */
+  height: 50vh; 
 }
-
 
 body {
   margin: 0;
-  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -462,7 +461,7 @@ h6,
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
-  color: #343a40;
+  color: #3c4a58;
 }
 
 h1,
@@ -7047,7 +7046,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #502861 !important;
+  background-color: #000 !important;
 }
 
 .text-primary {
@@ -8496,6 +8495,108 @@ button.bg-dark:focus {
 .my-0 {
   margin-bottom: 0 !important;
   padding-bottom: auto;
+  color: #313364;
+  font-family: 'Young Serif';
+}
+
+.mb-01,
+.my-01 {
+  margin-bottom: 0 !important;
+  padding-bottom: auto;
+  color: #000;
+  font-family: 'Young Serif';
+  font-size: 18px;
+}
+
+.mb-02,
+.my-02 {
+  margin-bottom: 0 !important;
+  padding-bottom: auto;
+  color: #000;
+  font-family: 'Young Serif';
+  font-size: 18px;
+}
+
+.mb-03,
+.my-03 {
+  margin-bottom: 0 !important;
+  padding-bottom: auto;
+  color: #7a559c;
+  font-family: 'Young Serif';
+  font-size: 25px;
+}
+
+.mb-04,
+.my-04 {
+  margin-bottom: 0 !important;
+  padding-bottom: auto;
+  color: #7a559c;
+  font-family: 'Young Serif';
+  font-variant: small-caps;
+  font-size: 20px;
+}
+
+.mb-05,
+.my-05 {
+  margin-bottom: 0 !important;
+  padding-bottom: auto;
+  color: #7a559c;
+  font-family: 'Young Serif';
+  font-size: 18px;
+}
+
+.mb-06,
+.my-06 {
+  margin-bottom: 0 !important;
+  padding-bottom: auto;
+  color: #000;
+  font-family: 'Young Serif';
+  font-size: 18px;
+}
+
+.mb-07,
+.my-07 {
+  margin-bottom: 0 !important;
+  padding-bottom: auto;
+  color: #7a559c;
+  font-family: 'Young Serif';
+  font-size: 20px;
+}
+
+.mb-09,
+.my-09 {
+  margin-bottom: 0 !important;
+  padding-bottom: auto;
+  color: #7a559c;
+  font-family: 'Young Serif';
+  font-size: 20px;
+}
+
+.mb-10,
+.my-10 {
+  margin-bottom: 0 !important;
+  padding-bottom: auto;
+  color: #000;
+  font-family: 'Young Serif';
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.name,
+.name-1 {
+  margin-bottom: 0 !important;
+  padding-bottom: auto;
+  color: #000;
+  font-family: 'Young Serif';
+  text-transform: capitalize;
+}
+
+.tel-mail,
+.tel-mail-1 {
+  font-family: "Young Serif";
+  text-transform: lowercase ;
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 
 .ml-0,
@@ -8568,6 +8669,9 @@ button.bg-dark:focus {
 .mb-3,
 .my-3 {
   margin-bottom: 1rem !important;
+  font-family: "Young Serif";
+  font-size: 1px;
+  color: #000;
 }
 
 .ml-3,
@@ -8616,6 +8720,8 @@ button.bg-dark:focus {
 .mb-5,
 .my-5 {
   margin-bottom: 1rem !important;
+  font-family: "Young Serif";
+  color: #000;
 }
 
 .ml-5,
@@ -11034,14 +11140,14 @@ p.lead {
 }
 
 .subheading {
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  text-transform: uppercase;
+  font-family: "Young Serif";
+  text-transform: lowercase ;
   font-weight: 500;
   font-size: 1.5rem;
 }
 
 .sub-text {
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Young Serif";
   text-transform: lowercase;
   font-weight: 500;
   font-size: 1.5rem;
@@ -11050,7 +11156,8 @@ p.lead {
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
-  text-transform: uppercase;
+  text-transform: lowercase;
+  font-family: "Young Serif";
 }
 
 #sideNav .navbar-toggler:focus {
