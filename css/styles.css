@@ -58,8 +58,8 @@ section {
 }
 
 img.duke {
-  padding: 0.5em;
-  padding-left: 11rem;
+  padding: 0.50em;
+  padding-left: 5rem;
 }
 
 img.linked {
@@ -145,7 +145,32 @@ body {
   line-height: 1.5;
   color: #805f95;
   text-align: left;
-  background-color: #fff;
+  background-color: #F2E5D6;
+}
+
+.resume-section-content {
+  position: relative;
+}
+
+.duke {
+  position: absolute;
+  top: auto;
+  transform: auto;
+}
+
+.gif {
+  width: 100px; 
+  height: auto;
+}
+
+.gif-container {
+  position: relative;
+}
+
+.d {
+  position: absolute;
+  top: 1px;
+  left: 1;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -8560,7 +8585,7 @@ button.bg-dark:focus {
   padding-bottom: auto;
   color: #7a559c;
   font-family: 'Young Serif';
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .mb-09,
@@ -8645,6 +8670,7 @@ button.bg-dark:focus {
 .mb-2,
 .my-2 {
   margin-bottom: 0.5rem !important;
+  border-radius: 10px;
 }
 
 .ml-2,
