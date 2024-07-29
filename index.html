@@ -1,288 +1,395 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="portfólio">
-    <meta name="author" content="George Piter">
-    <title>George Piter</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/Duke.svg">
-    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Young+Serif&display=swap" rel="stylesheet">
-</head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-<body class="imagem" id="page-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none">George Piter</span>
-            <span class="d-none d-lg-block">
-                <img class="img-fluid  mb-2" src="assets/img/eu.png" alt="Eu">
-            </span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#education">Acadêmica</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#certification">Certificação</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#skills">Hard Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#projects">Projetos Git</a>
-                </li>
-            </ul>
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+              <a href="#" class="nav__logo">George Piter</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li>
+                    <li class="nav__item"><a href="#academic" class="nav__link">Acadêmica</a></li>
+                    <li class="nav__item"><a href="#qualifications" class="nav__link">Qualificações</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projetos</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title"><br><span class="home__title-color">George Piter</span><br>Desenvolvedor Backend</h1>
+                <a href="#contact" class="button">Contato</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/gpiter" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/georgepiter" target="_blank" class="home__social-icon"><i class='bx bxl-github'></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5511991516866" class="home__social-icon"><i class='bx bxl-whatsapp'></i></a>
+                <a href="mailto:george.piter@terra.com.br" class="home__social-icon"><i class='bx bxs-envelope'></i></a>
+            </div>
+
+            <div class="home__img">
+                <img src="assets/imgs/eu-removebg.png" alt="George Piter">
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <h2 class="section-title">Sobre</h2>
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/imgs/Piter.jpeg" alt="about">
+                </div>
+                <div>
+                    <h2 class="about__subtitle">George Piter</h2>
+                    <p class="about__text">Como desenvolvedor de software back-end, acumulo mais de 13 anos de experiência na área de tecnologia, trabalhando em diversos segmentos de projetos, com foco atual em projetos do setor financeiro. Possuo habilidades sólidas em resolução de problemas e reconheço a importância da aprendizagem contínua no desenvolvimento web. Dedico grande parte do meu tempo livre para explorar e aplicar os mais recentes avanços tecnológicos em meus projetos. Estou sempre em busca de oportunidades para aprimorar minhas habilidades e contribuir para o sucesso da equipe e dos projetos em que estou envolvido!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Linguagens de Programação & Ferramentas</h2>
+                    <p class="skills__text">Abaixo, algumas das minhas habilidades e conhecimentos na área de desenvolvimento de Software</p>
+        
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-java skills__icon'></i>
+                        </div>
+                        <div class="skills__names">
+                            <span class="skills__name">Java 8, 11, 17, 21</span>
+                        </div>
+                        <div class="skills__bar skills__java"></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-go-lang skills__icon'></i>
+                        </div>
+                        <div class="skills__names">
+                            <span class="skills__name">Go Lang</span>
+                        </div>
+                        <div class="skills__bar skills__go"></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-spring-boot skills__icon'></i>
+                        </div>
+                        <div class="skills__names">
+                            <span class="skills__name">Spring Boot 2.x e 3.x</span>
+                        </div>
+                        <div class="skills__bar skills__spring"></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-github skills__icon'></i>
+                        </div>
+                        <div class="skills__names">
+                            <span class="skills__name">GitHub</span>
+                        </div>
+                        <div class="skills__bar skills__git"></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-server skills__icon'></i>
+                        </div>
+                        <div class="skills__names">
+                            <span class="skills__name">Postman</span>
+                        </div>
+                        <div class="skills__bar skills__postman"></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-data skills__icon'></i>
+                        </div>
+                        <div class="skills__names">
+                            <span class="skills__name">MySQL</span>
+                        </div>
+                        <div class="skills__bar skills__mysql"></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-data skills__icon'></i>
+                        </div>
+                        <div class="skills__names">
+                            <span class="skills__name">Oracle</span>
+                        </div>
+                        <div class="skills__bar skills__oracle"></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-mongodb skills__icon'></i>
+                        </div>
+                        <div class="skills__names">
+                            <span class="skills__name">MongoDB</span>
+                        </div>
+                        <div class="skills__bar skills__mongodb"></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-postgresql skills__icon'></i>
+                        </div>
+                        <div class="skills__names">
+                            <span class="skills__name">PostgreSQL</span>
+                        </div>
+                        <div class="skills__bar skills__postgresql"></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-docker skills__icon'></i>
+                        </div>
+                        <div class="skills__names">
+                            <span class="skills__name">Docker</span>
+                        </div>
+                        <div class="skills__bar skills__docker"></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-transfer skills__icon'></i>
+                        </div>
+                        <div class="skills__names">
+                            <span class="skills__name">Apache Kafka</span>
+                        </div>
+                        <div class="skills__bar skills__kafka"></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-google-cloud skills__icon'></i>
+                        </div>
+                        <div class="skills__names">
+                            <span class="skills__name">Google Cloud Platform</span>
+                        </div>
+                        <div class="skills__bar skills__gcp"></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-aws skills__icon'></i>
+                        </div>
+                        <div class="skills__names">
+                            <span class="skills__name">Amazon Web Services</span>
+                        </div>
+                        <div class="skills__bar skills__aws"></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-cloud skills__icon'></i>
+                        </div>
+                        <div class="skills__names">
+                            <span class="skills__name">Microsoft Azure
+                            </span>
+                        </div>
+                        <div class="skills__bar skills__azure"></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-shield skills__icon'></i>
+                        </div>
+                        <div class="skills__names">
+                            <span class="skills__name">Spring Security</span>
+                        </div>
+                        <div class="skills__bar skills__spring-security"></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-check-circle skills__icon'></i>
+                        </div>
+                        <div class="skills__names">
+                            <span class="skills__name">JUnit 5</span>
+                        </div>
+                        <div class="skills__bar skills__junit"></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-analyse skills__icon'></i>
+                        </div>
+                        <div class="skills__names">
+                            <span class="skills__name">Data Dog</span>
+                        </div>
+                        <div class="skills__bar skills__datadog"></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/imgs/work3.jpg" alt="" class="skills__img">
+                </div>
+            </div>
+        </section>     
+
+        <section class="academic section" id="academic">
+            <h2 class="section-title">Acadêmica</h2>
+
+            <div class="qualifications__container bd-grid">
+                <div class="qualifications__data">
+                    <i class='bx bxs-trophy qualifications__icon'></i>
+                    <span class="qualifications__name">Centro Universitário FAM - Administração de Banco de dados</span>
+                </div>
+                <div class="qualifications__data">
+                    <i class='bx bxs-trophy qualifications__icon'></i>
+                    <span class="qualifications__name">Faculdade Anhanguera - Pós-Graduação em Engenharia de Software</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="qualifications section" id="qualifications">
+            <h2 class="section-title">Qualificações & Graduações</h2>
+
+            <div class="qualifications__container bd-grid">
+                <div class="qualifications__data">
+                    <i class='bx bxs-trophy qualifications__icon'></i>
+                    <span class="qualifications__name">ITC-034: LGPD Foundation®</span>
+                </div>
+                <div class="qualifications__data">
+                    <i class='bx bxs-trophy qualifications__icon'></i>
+                    <span class="qualifications__name">TC-038: GDPR Foundation®</span>
+                </div>
+                <div class="qualifications__data">
+                    <i class='bx bxs-trophy qualifications__icon'></i>
+                    <span class="qualifications__name">Scrum Foundations® Professional Certificate</span>
+                </div>
+                <div class="qualifications__data">
+                    <i class='bx bxs-trophy qualifications__icon'></i>
+                    <span class="qualifications__name">Kanban Foundation® Professional Certificate</span>
+                </div>
+                <div class="qualifications__data">
+                    <i class='bx bxs-trophy qualifications__icon'></i>
+                    <span class="qualifications__name">DevOps Essentials® Professional Certificate</span>
+                </div>
+                <div class="qualifications__data">
+                    <i class='bx bxs-trophy qualifications__icon'></i>
+                    <span class="qualifications__name">Remote Work and Virtual Collaboration Certificate</span>
+                </div>
+                <div class="qualifications__data">
+                    <i class='bx bxs-trophy qualifications__icon'></i>
+                    <span class="qualifications__name">Fundamentals of the General Data Protection Law (LGPD)</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects section" id="projects">
+            <h2 class="section-title">Projetos</h2>
+
+            <div class="projects__container bd-grid">
+                <div class="projects__text">
+                    <h3><a href="https://github.com/georgepiter/controlz" target="_blank">ControlZ - Back-End</a></h3>
+                    <p>O sistema está completo e compõe, integração com API de mensageria SendinBlue, Spring Security com OAuth2.0 e token JWT java 17, Spring Boot 2.5.2, mysql</p>
+                </div>
+                <div class="projects__text">
+                    <h3><a href="https://github.com/georgepiter/my-finances" target="_blank">MyFinance - Front-End</a></h3>
+                    <p>O sistema está completo e compõe com o back end ControlZ</p>
+                </div>
+                <div class="projects__text">
+                    <h3><a href="https://github.com/georgepiter/dsdeliver-sds2" target="_blank">Ds Delivery</a></h3>
+                    <p>O sistema foi desenvolvido com as seguintes tecnologias Banco de dados - PostGresql
+                        Back End - Java com Spring Boot -- Implantado no Heroku
+                        Front End Web - ReactJs -- Implantado no netlify
+                        Front Web - Mobile - React Native</p>
+                </div>
+                <div class="projects__text">
+                    <h3><a href="https://github.com/georgepiter/entregaveloz" target="_blank">Entrega Veloz</a></h3>
+                    <p>O sistema foi desenvolvido com as seguintes tecnologias:  Banco de dados - PostGresql
+                        Back End - Java 8, Postgresql 12, Spring Boot 2.4.1,  NodeJS 14.15.4, angular 11.0.7</p>
+                </div>
+                <div class="projects__text">
+                    <h3><a href="https://github.com/georgepiter/dungeon-heroe" target="_blank">Dungeon Heroe 1.0</a></h3>
+                    <p>O jogo foi desenvolvido em HTML5 - CSS Java Script</p>
+                </div>
+                <div class="projects__text">
+                    <h3><a href="https://github.com/georgepiter/api-auth" target="_blank">API de Autenticação</a></h3>
+                    <p>API de Autenticação GO 1.20
+                        Token JWT
+                        Gin 1.9.1
+                        GORM 1.9.16 e docker</p>
+                </div>
+                <div class="projects__text">
+                    <h3><a href="https://github.com/georgepiter/health" target="_blank">Cadastro de beneficiário plano de saúde</a></h3>
+                    <p>Crud básico Java 17
+                        Spring Boot 2.5.2
+                        Spring security
+                        Token JWT, documentação swagger e docker</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contato</h2>
+
+            <div class="contact__container bd-grid">
+                <form id="contact-form" class="contact__form">
+                    <input type="text" name="name" placeholder="Nome" class="contact__input" required>
+                    <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                    <textarea name="message" placeholder="Mensagem" class="contact__input" required></textarea>
+                    <input type="submit" value="Enviar" class="contact__button button">
+                </form>
+            </div>
+            <button id="back-to-top" title="Voltar ao topo">↑</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__title">George Piter</p>
+
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/gpiter" target="_blank" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/georgepiter" target="_blank" class="footer__icon"><i class='bx bxl-github'></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5511991516866" target="_blank" class="footer__icon"><i class='bx bxl-whatsapp'></i></a>
         </div>
-    </nav>
+        <p>&#169; 2024 Todos os direitos reservados</p>
+    </footer>
 
-    <!-- Page Content-->
-    <div class="container-fluid p-0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
 
-        <!-- Sobre-->
-        <section id="about" class="resume-section">
-            <div class="resume-section-content">
-              <h1 class="name-1">
-                George Piter
-              </h1>
-            <div class="tel-mail-1">
-                <a href="tel:+5511991516866" style="color: #7a559c;">(11) 99151-6866</a>
-                <img class="zap" src="./assets/img/whatsap.gif" alt="whatsapp">
-                <a href="mailto:george.piter@terra.com.br" style="color: #7a559c;">george.piter@terra.com.br</a>
-                <img class="mail" src="./assets/img/mail_success.gif" alt="email">
-            </div>
-              <p class="mb-06">
-                Como desenvolvedor de software back-end, acumulo mais de 12 anos de experiência na área de tecnologia, trabalhando em diversos segmentos de projetos, com foco atual em projetos do setor financeiro. Possuo habilidades sólidas em resolução de problemas e reconheço a importância da aprendizagem contínua no desenvolvimento web. Dedico grande parte do meu tempo livre para explorar e aplicar os mais recentes avanços tecnológicos em meus projetos. Estou sempre em busca de oportunidades para aprimorar minhas habilidades e contribuir para o sucesso da equipe e dos projetos em que estou envolvido.
-              </p>
-              <div class="social-icons">
-                <a href="https://www.linkedin.com/in/gpiter" target="_blank"><img class="linked"src="./assets/img/linkedin.gif" alt="linkedin"></a>
-                <a href="https://github.com/georgepiter" target="_blank"><img class="github"src="./assets/img/girhub02.gif" alt="github"></a>
-              </div>
-            </div>
-          </section>
-          <hr class="m-0">          
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', async (event) => {
+            event.preventDefault();
 
-        <!-- Academica-->
-        <section class="resume-section" id="education">
-            <div class="resume-section-content">
-              <h2 class="mb-5">Educação<img class="gif" src="./assets/img/education.gif" alt="Acadêmica"></h2>
-              <div class="d-flex flex-column flex-md-row justify-content-between mb-05">
-                <div class="flex-grow-1">
-                  <h3 class="mb-03">Centro Universitário FAM</h3>
-                  <div class="subheading mb-3">Administração de Banco de Dados</div>
-                </div>
-                <div class="flex-grow-1">
-                  <h3 class="mb-03">Centro Universitário Anhanguera</h3>
-                  <div class="subheading mb-3">Pós-graduação em Engenharia de Software</div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <hr class="m-0" />
-          <section class="resume-section" id="certification">
-            <div class="resume-section-content">
-              <h2 class="mb-5">Certificações<img class="gif" src="./assets/img/certificate.gif" alt="certificate"></a></h2>
-              <ul class="fa-ul mb-01">
-                <li>
-                  <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                  ITC-034: LGPD Foundation®
-                </li>
-                <li>
-                  <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                  ITC-038: GDPR Foundation®
-                </li>
-                <li>
-                  <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                  Scrum Foundations® Professional Certificate
-                </li>
-                <li>
-                  <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                  Kanban Foundation® Professional Certificate
-                </li>
-                <li>
-                  <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                  DevOps Essentials® Professional Certificate
-                </li>
-                <li>
-                  <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                  Remote Work and Virtual Collaboration Certificate
-                </li>
-                <li>
-                  <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                  Fundamentals of the General Data Protection Law (LGPD)
-                </li>
-              </ul>
-            </div>
-        </section>
+            const name = event.target.name.value;
+            const email = event.target.email.value;
+            const message = event.target.message.value;
 
-        <!-- Skills-->
-        <section class="resume-section" id="skills">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Skills<img class="gif" src="./assets/img/rocket1gif.gif" alt="skills"></a></h2>
-                <div class="mb-04">Programming Languages & Tools</div>
-                <div class="gif-container">
-                    <img class="d" src="./assets/img/dukecat1.gif" alt="dukejava">
-                </div> 
-                <ul class="fa-ul mb-02">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Java 
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Go Lang
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Spring Boot
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        HTML5
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        CSS
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Bootstrap
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        GitHub
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Postman
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        MySQL - Oracle - MongoDB - PostGresql
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Docker
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Apache Kafka
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Google Cloud Platform
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Amazon Web Services
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        API REST and SOAP
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Microsservices
-                    </li>
-                </ul>                
-        </section>
-        <!-- Projetos-->
-        <section class="resume-section" id="projects">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Projetos GIT<img class="gif" src="./assets/img/projects.gif" alt="projects"></h2>
-                <div class="mb-07">no GitHub</div><br>
-                <div class="mb-09">Sistema para controle das finanças pessoais<br>
-                    <a href="https://github.com/georgepiter/controlz" target="_blank">ControlZ - Back-End</a> 
-                    <div class="mb-10">
-                        <li>
-                            O sistema está completo e compõe, integração com API de mensageria SendinBlue, Spring Security com OAuth2.0 e token JWT
-                        </li>
-                    </div>
-                    </p>
-                </div>
+            try {
+                const response = await fetch('/.netlify/functions/send-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ name, email, message }),
+                });
 
-                <div class="mb-09">Sistema para controle das finanças pessoais<br>
-                    <a href="https://github.com/georgepiter/my-finances" target="_blank">my-finances - Front-End</a> 
-                    <div class="mb-10">
-                        <li>
-                            O sistema está completo e compõe com o back end
-                        </li>
-                    </div>
-                    </ul>
-                    </p>
-                </div>
-    
-                <div class="mb-09">Projeto / Restaurante de massas com aplicativo do entregador<br>
-                    <a href="https://github.com/georgepiter/dsdeliver-sds2" target="_blank">Sds Delivery</a>
-                    <div class="mb-10">
-                        <li>O sistema foi desenvolvido com as seguintes tecnologias:</li>
-                    </div>
-                    </p>
-                </div>
-
-                <div class="mb-09">Projeto / Rastreamento de Encomendas Entrega Veloz<br>
-                    <a href="https://github.com/georgepiter/entregaveloz" target="_blank">Entrega Veloz</a>
-                    <div class="mb-10">
-                        <li>
-                            O sistema foi desenvolvido com as seguintes tecnologias:</li>
-                    </div>
-                </div>
-                <br>
-
-                <div class="mb-09">Projeto / Dungeon Heroe 1.0<br>
-                    <a href="https://github.com/georgepiter/dungeon-heroe" target="_blank">Dungeon Heroes</a>
-                    <div class="mb-10">
-                        <li>O jogo foi desenvolvido em java script
-                        </li>
-                    </div>
-                </div>
-                <br>
-
-                <div class="mb-09">Projeto / API de Autenticação<br>
-                    <a href="https://github.com/georgepiter/api-auth" target="_blank">Auth</a>
-                    <div class="mb-10">
-                        <li>API de Autenticação em GO, token JWT, gin, GORM e docker
-                        </li>
-                    </div>
-                </div>
-                <br>
-
-                <div class="mb-09">Projeto / Cadastro de beneficiário plano de saúde<br>
-                    <a href="https://github.com/georgepiter/health" target="_blank">Health</a>
-                    <div class="mb-10">
-                        <li>Crud básico com Token JWT, autorização, documentação swagger e docker
-                        </li>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <hr class="m-0" />
-    </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Third party plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+                const data = await response.json();
+                console.log(data);
+                if (response.ok) {
+                    alert('Message sent successfully');
+                } else {
+                    alert('Failed to send message: ' + data.message);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred while sending the message');
+            }
+        });
+    </script>
+      
 </body>
-
 </html>
