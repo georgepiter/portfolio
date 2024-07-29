@@ -16,14 +16,14 @@ exports.handler = async function(event, context) {
     const transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-          user: "george.piter@terra.com.br", // Utilize variáveis de ambiente
-          pass: "Eagle@3425",
+          user: process.env.USER,
+          pass: process.env.PASS,
         }
     });
 
     const mailOptions = {
         from: email,
-        to: 'george.piter@terra.com.br',
+        to: process.env.USER,
         subject: `New contact form submission from ${name}`,
         text: message
     };
