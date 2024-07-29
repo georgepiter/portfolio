@@ -14,7 +14,7 @@ exports.handler = async function(event, context) {
     const { name, email, message } = JSON.parse(event.body);
 
     const transporter = nodemailer.createTransport({
-        service: 'Gmail',
+        service: 'Terra',
         auth: {
           user: process.env.USER,
           pass: process.env.PASS,
